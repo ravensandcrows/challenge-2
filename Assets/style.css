@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /*BODY STYLIZATION*/
+}
+
+header{
+    color: whitesmoke;
+    background-color: #022c0a;
+    padding: 1%;
+     /*repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), 
+repeating-linear-gradient( #444cf755, #444cf7 );*/
+}
+
+header h1 {
+    display: inline-block;
+    text-align: left;
+    font-family:fantasy;
+}
+
+#profile{
+    /*sTYLIZATION*/
+
+}
+
+header nav{
+   text-align: right;
+}
+
+header nav ul{
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 150%;
+}
+
+header nav ul li {
+    display:inline-block
+}
+
+nav a {
+    color: whitesmoke;
+
+}
+
+.about{
+    /*sTYLIZATION*/
+}
+
+h2{
+    font-family: fantasy;
+    font-size: 100%;
+    color: #022c0a;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.about p {
+    font-family: monospace;
+    text-align: center;
+    text-justify: right;
+}
+
+.work{
+    /*sTYLIZATION*/
+}
+
+.projects{/*sTYLIZATION*/}
+
+.card {
+    /*sTYLIZATION*/
+}
+
+#first-project{
+    /*sTYLIZATION*/
+}
+
+.contact{/*sTYLIZATION*/}
+
+.contact ul{
+    list-style-type: none;
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 150%;
+    text-align: center;
+}
+
+.contact ul li{
+    display:inline-block
+}
+
+.card-contact{
+flex-wrap: 1 0 200px;
+  padding: 40px;
+  background-color: #022c0a;
+  text-align: center;
+}
+
+footer {
+    background-color: #022c0a;
+    color: whitesmoke;
+}
