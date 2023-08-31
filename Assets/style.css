@@ -7,9 +7,14 @@ body{
 }
 
 header{
+    display: flex;
+    flex-wrap: wrap;
     color: whitesmoke;
     background-color: #022c0a;
-    padding: 1%;
+    background-image: url(images/forest.png);
+    background-size: 26%;
+    
+    
      /*repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), 
 repeating-linear-gradient( #444cf755, #444cf7 );*/
 }
@@ -26,13 +31,16 @@ header h1 {
 }
 
 header nav{
-   text-align: right;
+    margin-left: auto;
+    margin-top: auto;
+   
 }
 
 header nav ul{
     list-style-type: none;
     font-family: monospace;
     font-size: 150%;
+    
 }
 
 header nav ul li {
@@ -42,6 +50,22 @@ header nav ul li {
 nav a {
     color: whitesmoke;
 
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3%;
+}
+
+.circle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
 }
 
 .about{
@@ -66,14 +90,25 @@ h2{
     /*sTYLIZATION*/
 }
 
-.projects{/*sTYLIZATION*/}
+.projects{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: blueviolet;
+}
 
 .card {
     /*sTYLIZATION*/
 }
 
 #first-project{
-    /*sTYLIZATION*/
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .contact{/*sTYLIZATION*/}
