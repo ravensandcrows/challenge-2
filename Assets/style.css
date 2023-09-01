@@ -1,138 +1,306 @@
 *{
     box-sizing: border-box;
 }
-
-body{
-    /*BODY STYLIZATION*/
-}
-
+/*Sets basis for headers colors*/
 header{
     display: flex;
     flex-wrap: wrap;
     color: whitesmoke;
     background-color: #022c0a;
-    background-image: url(images/forest.png);
-    background-size: 26%;
-    
-    
-     /*repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), 
-repeating-linear-gradient( #444cf755, #444cf7 );*/
 }
-
-header h1 {
+/*Font info set*/
+h1 {
     display: inline-block;
     text-align: left;
-    font-family:fantasy;
+    font-family:cursive;
+    font-size: 300%;
+    margin-left: 1%;
 }
-
-#profile{
-    /*sTYLIZATION*/
-
-}
-
+/*nav location set*/
 header nav{
     margin-left: auto;
     margin-top: auto;
-   
 }
-
+/*text styling*/
 header nav ul{
     list-style-type: none;
     font-family: monospace;
-    font-size: 150%;
+    font-size: 250%;
     
 }
-
+/*display set*/
 header nav ul li {
-    display:inline-block
+    display:inline-block;
 }
-
+/*colors*/
 nav a {
     color: whitesmoke;
 
 }
-
+/*circle set for photo, plus items to set bounds*/
+#profile{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: left;
+}
+/*background image + bounds set*/
 .hero{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 3%;
+    flex-wrap:wrap;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url('images/IMG_9395.JPG');
+    background-size: cover;
+    background-position: center;
 }
-
-.circle{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 700px;
-    height: 700px;
-    border-radius: 50%;
+/*text bounds are set and opacity*/
+.text-left{
+    background-color: #022c0a;
+    opacity: 80%;
+    position:absolute;
+    bottom: 0%;
+    right: 0%;
 }
-
-.about{
-    /*sTYLIZATION*/
+/*text rules for hero set*/
+.hero h2{
+    font-family: monospace;
+    color: white;
+    font-size: 300%;
 }
-
+/*h2 rules for whole page -hero set here*/
 h2{
-    font-family: fantasy;
-    font-size: 100%;
+    font-family: cursive;
+    font-size: 300%;
     color: #022c0a;
     text-decoration: underline;
     text-align: left;
 }
-
-.about p {
+/*paragraph styling for about*/
+#about p {
     font-family: monospace;
-    text-align: center;
     text-justify: right;
+    line-height: 250%;
+    font-size: 150%;
 }
-
-.work{
-    /*sTYLIZATION*/
-}
-
-.projects{
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: blueviolet;
-}
-
-.card {
-    /*sTYLIZATION*/
-}
-
+/*Sets bounds and size of the larger work box*/
 #first-project{
-    background-color: palevioletred;
+    display: flex;
+    flex-wrap:wrap;
+    height: 1000px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image:url(images/IMG_9001.JPG);
+    color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    border: #022c0a;
+    border-style: solid;
+    border-width: 8px;
+
+}
+/*sets the grid, rows and colmuns for the other projects*/
+.projects{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    color:whitesmoke;
+    width: 100%;
+    height: 800px;
+    grid-row: 2;
+
+}
+  
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    width: 100%;
+    margin: 5px;
 }
 
-.contact{/*sTYLIZATION*/}
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin: 5px;
+    border: #022c0a;
+    border-style: solid;
+    border-width: 8px;
+  }
+ /*photos for projects*/
+  #sea-creatures {
+    background-image: url(images/IMG_5993.JPG);
+}
+  #wheat {
+    background-image: url(images/IMG_1567.JPG);
+  }
+  #poppy {
+    background-image: url(images/IMG_9385.JPG);
+  }
+  #daisies {
+    background-image: url(images/IMG_9046.JPG);
+  }
+/*positions the photos and sets their bounds*/
+.card{
+    flex-wrap: 1 0 200px;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*sets up the internal textboxes + fonts*/
+.text-box{
+    background-color: #022c0a;
+    opacity:80%;
+    position:absolute;
+    bottom: 0%;
+    left: 0%;
 
-.contact ul{
+}
+.text-box h3{
+    font-family: cursive;
+    font-size:300%;
+}
+.text-box p{
+    font-family: monospace;
+    font-size: 200%;
+}  
+/*sets flexbox*/
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+/*sets styling rules for the list*/
+#contact ul{
     list-style-type: none;
     color: whitesmoke;
     font-family: monospace;
     font-size: 150%;
     text-align: center;
 }
-
-.contact ul li{
-    display:inline-block
+#contact ul li{
+    display:inline-block;
 }
 
+/*creates the boxes for the each dimension*/
 .card-contact{
-flex-wrap: 1 0 200px;
-  padding: 40px;
-  background-color: #022c0a;
-  text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    background-color: #022c0a;
+    background-size: cover;
+    text-align: center;
+    width: 275px;
 }
 
-footer {
+footer{
+    display: flex;
+    flex-wrap: wrap;
     background-color: #022c0a;
     color: whitesmoke;
+    font-style: monospace;
+    font-size: 150%;
+    justify-content: center;
+
 }
+
+
+
+
+/* Tablets - changes mostly font styling based on size of reader */
+@media screen and (max-width: 992px) {
+    h1{
+        font-size: 250%;
+    }
+    header nav ul{
+        font-size: 200%;
+    }
+    .hero h2{
+        font-size: 250%;
+    }
+    h2 {
+        font-size: 250%;
+    }
+    #first-project{
+        height:750px;
+    }
+    .projects{
+        height:750px;
+    }
+    .text-box h3{
+        font-size: 200%;
+    }
+    .text-box p{
+        font-size:150%;
+    }
+  }
+
+  
+  /* Large smartphones - ont styling based on size of reader */
+  @media screen and (max-width: 768px) {
+    h1{
+        font-size: 250%;
+    }
+    header nav ul{
+        font-size: 200%;
+    }
+    .hero h2{
+        font-size: 250%;
+    }
+    h2 {
+        font-size: 250%;
+    }
+    #first-project{
+        height:750px;
+    }
+    .projects{
+        height:750px;
+    }
+    .text-box h3{
+        font-size: 200%;
+    }
+    .text-box p{
+        font-size:150%;
+    }
+  }
+  
+  /* Small smartphones - ont styling based on size of reader */
+  @media screen and (max-width: 576px) {
+      h1{
+        font-size: 150%;
+    }
+    header nav ul{
+        font-size: 100%;
+    }
+    .hero h2{
+        font-size: 150%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    #about p{
+        font-size: 100%;
+    }
+    #first-project{
+        height:550px;
+    }
+    .projects{
+        height:450px;
+    }
+    .text-box h3{
+        font-size: 100%;
+    }
+    .text-box p{
+        font-size:50%;
+    }
+  }
