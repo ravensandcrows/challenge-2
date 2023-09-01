@@ -1,87 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link href="Assets/reset.css">
     <link rel="stylesheet" href="Assets/style.css"> 
     <title>Kali's Portfolio</title>
 </head>
+
 <body>
     <header> 
+        <img id="profile" src="Assets/images/Kali copy 2.jpeg" alt="photo of the developer"> 
         <h1>Kali Blackstorm</h1>
-        <img id="profile"> <!--ADD PROFILE PIC HERE-->
         <nav>
             <ul>
                 <li>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </li>
                 <li>
-                    <a href="">My Work</a>
+                    <a href="#work">My Work</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
-    
         </nav>
     </header>
+    
     <hero class="hero">
-        <img class="circle" src="Assets/images/IMG_9395.JPG" alt="Close up photo of a yellow California Bush"> <!--ADD PIC HERE-->
-        <img class="circle" src="Assets/images/IMG_1567.JPG" alt="Close up of wheat"> <!--ADD PIC HERE-->
-        <img class="circle" src="Assets/images/IMG_5993.JPG" alt="Close up of mussels"> <!--ADD PIC HERE-->
-        <h3>SUBTITLE</h3>
+        <div class="card">
+            <div class="text-left">
+                <h2>A World of Wonder</h2>
+            </div>
+        </div>
     </hero>
     <main>
-        <section class="about">
+        <section id="about">
             <h2>About Me</h2>
-            <p>BLURB ON ME</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur itaque, beatae, odit dignissimos quisquam explicabo tenetur assumenda doloribus non obcaecati magni magnam veritatis suscipit, quam eius voluptates vel minima harum!!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui sit ipsum, voluptate est eligendi culpa deserunt molestias nisi. Earum, temporibus nulla quia consectetur porro rerum corporis expedita quo? Fuga, corporis!</p>
         </section>
-        <section class="work">
-            <h2>My Work</h2>
-            <div id="first-project">
-                <img> <!--ADD PIC HERE-->
-                <h3>CODE PROJECT</h3>
-                <p>CODE USED</p>
-            </div>
 
+        <section>
+            <div id="work">
+                <h2>My Work</h2>
+            </div>
+            <div class="card" id="first-project">
+                <div class="text-box">
+                    <h3>Walking trails</h3>
+                    <p>Javascript/CSS</p>
+                </div>
+                
+            </div>
             <div class="projects">
-                <div class="card">
-                    <img> <!--ADD PIC HERE-->
-                    <h3>CODE PROJECT</h3>
-                    <p>CODE USED</p>
-                </div>
-                <div class="card">
-                    <img><!--ADD PIC HERE-->
-                    <h3>CODE PROJECT</h3>
-                    <p>CODE USED</p>
-                </div>
-                <div class="card">  
-                  <img>  <!--ADD PIC HERE-->
-                  <h3>CODE PROJECT</h3>
-                  <p>CODE USED</p>
-                </div>
-                <div class="card">   
-                    <img> <!--ADD PIC HERE-->
-                     <h3>CODE PROJECT</h3>
-                    <p>CODE USED</p>
-                </div>
+                <div class='row'>
+                    <div class='column'>
+                      <div class ='card' id='sea-creatures'>
+                        <div class="text-box">
+                            <h3>Tide Report</h3>
+                            <p>MERN Stack</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='column'>
+                      <div class = 'card' id='wheat'>
+                        <div class="text-box">
+                            <h3>Plant Identifier</h3>
+                            <p>JavaScript/CSS</p>
+                        </div>
+                      </div>
+                    </div>
+                  <div class='row'>
+                    <div class='column'>
+                      <div class='card' id='daisies'>
+                        <div class="text-box">
+                            <h3>Gardening Guide</h3>
+                            <p>React/JavaScript</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class='column'>
+                      <div class='card' id='poppy'>
+                        <div class="text-box">
+                            <h3>Pollen Counter</h3>
+                            <p>MERN Stack</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-
         </section>
-        <section class="contact">
-         <h2>Contact Me!</h2>
-         <ul>
-             <li class="card-contact">PHONE</li>
-              <li class="card-contact">EMAIL</li>
-             <li class="card-contact">GITHUB</li>
-            <li class="card-contact">LINKEDIN</li>
+        <section id="contact">
+            <h2>Contact Me!</h2>
+            <ul>
+                <li class="card-contact">PHONE</li>
+                <li class="card-contact">EMAIL</li>
+                <li class="card-contact">GITHUB</li>
+                <li class="card-contact">LINKEDIN</li>
             </ul>
 
         </section>
     </main>
-    <footer>FOOTER HERE</footer>
+    <footer>Made with Love ©2023</footer>
     
 </body>
 </html>
